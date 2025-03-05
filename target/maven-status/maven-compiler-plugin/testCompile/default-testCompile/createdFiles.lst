@@ -1,0 +1,5 @@
+com\Testcases\LoginTest.class
+com\Testdata\ExtentReportManager.class
+com\Testdata\TestUtility.class
+com\Pages\LogoutPage.class
+com\Pages\LoginPage.class
