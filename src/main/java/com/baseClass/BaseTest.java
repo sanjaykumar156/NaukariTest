@@ -24,7 +24,6 @@ import org.testng.annotations.Parameters;
 public class BaseTest {
 	
 	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-
 	@BeforeClass
 	@Parameters({"os","browser"})
 	public void setup(String os,String browser) throws IOException {
