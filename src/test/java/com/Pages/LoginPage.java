@@ -36,12 +36,17 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath="//p[@class='msg']")//return text
 	WebElement successtxt;
 	
+	String username = System.getenv("NAUKRI_USERNAME");
+    String password = System.getenv("NAUKRI_PASSWORD");
+    
 	public void loginbutton() {
 		loginbtn.click();
 	}
-	public void usernamepasswordfiels() {
-		usernametxt.sendKeys(System.getenv("NAUKRI_USERNAME"));
-		passwordtxt.sendKeys(System.getenv("NAUKRI_PASSWORD"));
+	public void usernamefield() {
+		usernametxt.sendKeys(username);
+	}
+	public void passwordfield() {
+		passwordtxt.sendKeys(password);
 	}
 	public void signinbutton() {
 		signbtn.click();

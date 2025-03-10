@@ -27,8 +27,6 @@ public class BaseTest {
 	@BeforeClass
 	@Parameters({"os","browser"})
 	public void setup(String os,String browser) throws IOException {
-		String username = System.getenv("NAUKRI_USERNAME");
-		String password = System.getenv("NAUKRI_PASSWORD");
 		DesiredCapabilities capabilities= new DesiredCapabilities();
 		if(ConfigReader.getproperty("execution_environment").equals("remote")){
 			//platform set
