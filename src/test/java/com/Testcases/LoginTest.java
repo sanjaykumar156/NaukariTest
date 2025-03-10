@@ -24,7 +24,7 @@ public class LoginTest extends BaseTest{
 		
 		LoginPage login= new LoginPage(getDriver());
 		login.loginbutton();
-		login.usernamepasswordfiels(ConfigReader.getproperty("username"),ConfigReader.getproperty("password"));
+		login.usernamepasswordfiels();
 		login.signinbutton();
 		Assert.assertEquals(login.homepagevalidation(), true);
 		login.myprofilebutton();

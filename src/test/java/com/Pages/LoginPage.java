@@ -39,9 +39,9 @@ public class LoginPage extends BasePage {
 	public void loginbutton() {
 		loginbtn.click();
 	}
-	public void usernamepasswordfiels(String username,String password) {
-		usernametxt.sendKeys(username);
-		passwordtxt.sendKeys(password);
+	public void usernamepasswordfiels() {
+		usernametxt.sendKeys(System.getenv("NAUKRI_USERNAME"));
+		passwordtxt.sendKeys(System.getenv("NAUKRI_PASSWORD"));
 	}
 	public void signinbutton() {
 		signbtn.click();
